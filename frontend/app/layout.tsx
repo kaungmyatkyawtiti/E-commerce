@@ -1,7 +1,7 @@
 import type { ReactNode } from "react";
 import { StoreProvider } from "./StoreProvider";
 import "./styles/globals.css";
-import { Mulish } from "next/font/google";
+import { Quicksand } from "next/font/google";
 import { Metadata } from "next";
 import { ThemeProvider } from "./ThemeProvider";
 
@@ -17,7 +17,7 @@ interface Props {
   readonly children: ReactNode;
 }
 
-const mulist = Mulish({
+const mulist = Quicksand({
   weight: ['400', '500', '600', '700'],
   subsets: ['latin'],
   display: 'swap',
