@@ -10,7 +10,7 @@ export default function MobileMenu() {
   return (
     <>
       <button
-        className="hover:text-shop-blue-hard hoverEffect md:hidden"
+        className="hover:text-shop-blue-hard hoverEffect lg:hidden"
         onClick={() => isSideMenuOpen(!sideMenuOpen)}
       >
         {

@@ -1,17 +1,17 @@
-import { Heart, LogIn } from "lucide-react";
+import { Heart } from "lucide-react";
 import { ModeToggle } from "./ModeToggle";
 import SearchBar from "./SearchBar";
 import ShopCart from "./ShopCart";
-import SignIn from "./SignIn";
+import ClerkLogin from "./ClerkLogin";
 
 export default function AdminPotion() {
   return (
-    <div className="flex items-center gap-5 md:gap-7">
+    <div className="flex items-center gap-5 md:gap-6">
       <ShopCart />
-      <div className="hidden md:flex items-center gap-7">
+      <div className="hidden md:flex items-center gap-6">
         <SearchBar />
-        <Heart size={22} />
-        <SignIn />
+        <Heart size={20} />
+        <ClerkLogin />
       </div>
       <ModeToggle />
     </div>

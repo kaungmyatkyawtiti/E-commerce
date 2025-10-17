@@ -4,6 +4,7 @@ import "./styles/globals.css";
 import { Quicksand } from "next/font/google";
 import { Metadata } from "next";
 import { ThemeProvider } from "./ThemeProvider";
+import { ClerkProvider } from "@clerk/nextjs";
 
 export const metadata: Metadata = {
   title: {
@@ -25,23 +26,25 @@ const mulist = Quicksand({
 
 export default function RootLayout({ children }: Props) {
   return (
-    <StoreProvider>
-      <html
-        lang="en"
-        className={mulist.className} suppressHydrationWarning
-      >
-        <head />
-        <body>
-          <ThemeProvider
-            attribute="class"
-            defaultTheme="system"
-            enableSystem
-            disableTransitionOnChange
-          >
-            {children}
-          </ThemeProvider>
-        </body>
-      </html>
-    </StoreProvider>
+    <ClerkProvider>
+      <StoreProvider>
+        <html
+          lang="en"
+          className={mulist.className} suppressHydrationWarning
+        >
+          <head />
+          <body>
+            <ThemeProvider
+              attribute="class"
+              defaultTheme="system"
+              enableSystem
+              disableTransitionOnChange
+            >
+              {children}
+            </ThemeProvider>
+          </body>
+        </html>
+      </StoreProvider>
+    </ClerkProvider>
   );
 }

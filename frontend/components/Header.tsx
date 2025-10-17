@@ -5,7 +5,6 @@ import MyLogo from "./MyLogo";
 import Navbar from "./Navbar";
 
 export default function Header() {
-
   return (
     <header
       className="py-5 border-b border-border"
@@ -14,7 +13,7 @@ export default function Header() {
         className="flex items-center justify-between text-foreground/80"
       >
         {/* logo */}
-        <div className="flex items-center gap-5 md:gap-0">
+        <div className="flex items-center gap-4">
           <MobileMenu />
           <MyLogo />
         </div>

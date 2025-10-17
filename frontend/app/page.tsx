@@ -7,7 +7,7 @@ export default function IndexPage() {
       <Header />
 
       <Button
-        variant="link"
+        variant="ghost"
       >Check Out</Button>
     </>
   )
