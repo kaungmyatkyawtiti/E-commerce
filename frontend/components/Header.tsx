@@ -1,17 +1,23 @@
 import AdminPotion from "./AdminPotion";
+import MobileMenu from "./MobileMenu";
 import MyContainer from "./MyContainer";
 import MyLogo from "./MyLogo";
 import Navbar from "./Navbar";
-import NavMenu from "./NavMenu";
 
 export default function Header() {
+
   return (
-    <header className="py-5 border-b border-border">
+    <header
+      className="py-5 border-b border-border"
+    >
       <MyContainer
-        className="flex items-center justify-between"
+        className="flex items-center justify-between text-foreground/80"
       >
         {/* logo */}
-        <MyLogo />
+        <div className="flex items-center gap-5 md:gap-0">
+          <MobileMenu />
+          <MyLogo />
+        </div>
 
         {/* nav  */}
         <Navbar />
