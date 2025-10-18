@@ -1,14 +1,10 @@
-import Header from "@/components/Header";
-import { Button } from "@/components/ui/button";
+import HomeBanner from "@/components/HomeBanner";
+import MyContainer from "@/components/MyContainer";
 
 export default function IndexPage() {
   return (
-    <>
-      <Header />
-
-      <Button
-        variant="ghost"
-      >Check Out</Button>
-    </>
+    <MyContainer>
+      <HomeBanner />
+    </MyContainer>
   )
 }

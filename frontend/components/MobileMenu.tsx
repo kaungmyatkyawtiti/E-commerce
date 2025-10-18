@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { TextAlignEnd, TextAlignStart } from "lucide-react";
+import { TextAlignStart } from "lucide-react";
 import SideMenu from "./SideMenu";
 
 export default function MobileMenu() {
@@ -10,14 +10,11 @@ export default function MobileMenu() {
   return (
     <>
       <button
-        className="hover:text-shop-blue-hard hoverEffect lg:hidden"
+        title="menu"
+        className="hover:text-shop-violet p-2 hover:bg-secondary rounded-full hoverEffect lg:hidden"
         onClick={() => isSideMenuOpen(!sideMenuOpen)}
       >
-        {
-          sideMenuOpen
-            ? <TextAlignEnd size={26} />
-            : <TextAlignStart size={26} />
-        }
+        <TextAlignStart size={26} />
       </button>
       <SideMenu
         isOpen={sideMenuOpen}

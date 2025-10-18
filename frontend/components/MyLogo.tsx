@@ -11,15 +11,18 @@ export default function MyLogo({
   spanDesign,
 }: MyLogoProps) {
   return (
-    <Link href={"/"}>
+    <Link
+      href={"/"}
+      className="inline-flex"
+    >
       <h2
         className={cn(
-          "text-2xl font-bold uppercase group hoverEffect text-shop-blue-hard hover:text-shop-blue-soft",
+          "text-2xl font-bold uppercase group hoverEffect text-foreground hover:text-shop-violet",
           className
         )}
       >
         Shopcar<span className={cn(
-          "text-shop-blue-soft group-hover:text-shop-blue-hard",
+          "text-shop-violet group-hover:text-foreground",
           spanDesign
         )}>
           t

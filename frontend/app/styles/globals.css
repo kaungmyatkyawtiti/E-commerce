@@ -56,8 +56,8 @@
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
 
-  --color-shop-blue-soft: hsl(var(--shop-blue-soft));
-  --color-shop-blue-hard: hsl(var(--shop-blue-hard));
+  --color-shop-violet: hsl(var(--shop-violet));
+  --color-discount-blue: hsl(var(--discount-blue));
 }
 
 :root {
@@ -94,8 +94,8 @@
   --sidebar-border: oklch(0.92 0.004 286.32);
   --sidebar-ring: oklch(0.705 0.015 286.067);
 
-  --shop-blue-soft: 191.9, 72.3%, 46.7%;
-  --shop-blue-hard: 192.2, 72%, 30.8%;
+  --shop-violet: 322.2, 81.1%, 30%;
+  --discount-blue: 240, 15%, 92%;
 }
 
 .dark {
@@ -131,8 +131,8 @@
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.552 0.016 285.938);
 
-  --shop-blue-soft: 191.9, 72.3%, 46.7%;
-  --shop-blue-hard: 192.2, 72%, 30.8%;
+  --shop-violet: 322.4, 85.5%, 58%;
+  --discount-blue: 240, 15.7%, 16.3%;
 }
 
 @layer base {

@@ -5,6 +5,7 @@ import { Quicksand } from "next/font/google";
 import { Metadata } from "next";
 import { ThemeProvider } from "./ThemeProvider";
 import { ClerkProvider } from "@clerk/nextjs";
+import ThemedApp from "./ThemedApp";
 
 export const metadata: Metadata = {
   title: {
@@ -40,7 +41,9 @@ export default function RootLayout({ children }: Props) {
               enableSystem
               disableTransitionOnChange
             >
-              {children}
+              <ThemedApp>
+                {children}
+              </ThemedApp>
             </ThemeProvider>
           </body>
         </html>

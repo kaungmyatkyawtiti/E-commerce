@@ -1,8 +1,7 @@
 "use client";
 
-import { ClerkLoaded, SignedIn, useUser } from "@clerk/nextjs";
+import { ClerkLoaded, SignedIn, UserButton, useUser } from "@clerk/nextjs";
 import { currentUser } from "@clerk/nextjs/server";
-import { User } from "lucide-react";
 import SignIn from "./SignIn";
 
 export default function ClerkLogin() {
@@ -12,7 +11,7 @@ export default function ClerkLogin() {
   return (
     <ClerkLoaded>
       <SignedIn>
-        <User />
+        <UserButton />
       </SignedIn>
       {
         !user && <SignIn />

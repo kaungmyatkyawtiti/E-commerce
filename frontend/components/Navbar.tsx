@@ -1,5 +1,5 @@
 "use client";
-import { links } from "@/lib/links";
+import { links } from "@/lib/data";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -15,14 +15,14 @@ export default function Navbar() {
             key={ind}
             href={link.href}
             className={cn(
-              "relative hover:text-shop-blue-soft hoverEffect group",
-              pathname === link.href && "text-shop-blue-soft"
+              "relative text-muted-foreground hover:text-shop-violet hoverEffect group",
+              pathname === link.href && "text-shop-violet"
             )}
           >
             {link.name}
             <span
               className={cn(
-                "absolute left-0 -bottom-[2px] h-[2px] w-0 bg-shop-blue-soft hoverEffect group-hover:w-full",
+                "absolute left-0 -bottom-[2px] h-[2px] w-0 bg-shop-violet hoverEffect group-hover:w-full",
                 pathname === link.href && "w-full"
               )}
             ></span>

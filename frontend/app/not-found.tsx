@@ -8,13 +8,13 @@ export default function NotFound() {
         404
       </h1>
 
-      <p className="mb-8 text-lg sm:text-xl text-destructive animate-fade-in">
+      <p className="mb-8 text-lg sm:text-xl text-foreground animate-fade-in">
         Oops! The page you’re looking for does not exist.
       </p>
 
       <Link
         href="/"
-        className="px-6 py-3 bg-shop-blue-hard hover:bg-shop-blue-soft font-semibold rounded-lg shadow transform hover:scale-105"
+        className="px-6 py-3 bg-shop-violet hover:bg-shop-violet/80 font-semibold rounded-lg shadow transform hover:scale-105"
       >
         <span className="text-white flex items-center gap-1">
           <History size={20} />

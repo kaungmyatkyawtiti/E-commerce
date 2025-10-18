@@ -7,13 +7,13 @@ import ClerkLogin from "./ClerkLogin";
 export default function AdminPotion() {
   return (
     <div className="flex items-center gap-5 md:gap-6">
-      <ShopCart />
-      <div className="hidden md:flex items-center gap-6">
+      <div className="hidden md:flex items-center gap-5">
+        <ModeToggle />
         <SearchBar />
-        <Heart size={20} />
-        <ClerkLogin />
       </div>
-      <ModeToggle />
+      <Heart size={24} />
+      <ShopCart />
+      <ClerkLogin />
     </div>
   )
 }
